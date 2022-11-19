@@ -115,7 +115,6 @@ def get_all():
 register_tortoise(
     app,
     db_url = 'sqlite://db.sqlite3',
-    #'mongodb://vmpaymongoel01:27017,vmpaymongoel02:27017,vmpaymongoel03:27017/?replicaSet=PayOdsRs0',
     modules={'models': ['main']},
     generate_schemas=True,
     add_exception_handlers = True
